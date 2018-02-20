@@ -103,3 +103,12 @@ variable "default_tags" {
   description = "Default tags for all resources"
   type = "map"
 }
+
+variable "loadbalancer_apiserver_address" {
+    description = "Load balancer api server address"
+}
+
+variable "ansible_host_path" {
+    description = "Ansible host file relative path in where generate the output inventory"
+    default = "../ansible/inventory/hosts"
+}
